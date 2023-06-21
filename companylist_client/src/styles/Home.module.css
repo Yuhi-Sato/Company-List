@@ -1,0 +1,138 @@
+/* CreatePost.module.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.searchcontainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input,
+.textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Home.module.css */
+
+.homeContainer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchContainer {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.companyTable {
+  border-collapse: collapse;
+}
+.companyTable th,
+.companyTable td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.createButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.createButton:hover {
+  background-color: #0056b3;
+}
+
+.detailButton {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.editButton {
+  background-color: #11a42c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.editButton:hover {
+  background-color: #077810;
+}
+
+.deleteButton {
+  background-color: #e02424;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #9e1b1b;
+}
+
+.postCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.menue {
+  display: flex;
+  justify-content: space-between;
+}
