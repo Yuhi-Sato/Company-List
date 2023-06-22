@@ -1,8 +1,9 @@
-import { FormEvent, useState, ChangeEvent, ChangeEventHandler } from "react";
+import { FormEvent, useState, ChangeEvent } from "react";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
 import axios from "axios";
 import { parseCookies } from "nookies";
+import Link from "next/link";
 
 import {
   Chart as ChartJS,
@@ -212,6 +213,23 @@ const CompanyandAccouts = ({ company, accounts, memos }: Props) => {
   return (
     <>
       <div className={styles.container}>
+        <div className={styles.menue}>
+          <Link href="/" className={styles.createButton}>
+            企業一覧
+          </Link>
+          <Link href="/search-company" className={styles.createButton}>
+            企業を検索
+          </Link>
+          <br></br>
+          <Link href="/create-company" className={styles.createButton}>
+            企業を追加
+          </Link>
+          <br></br>
+          <Link href="/create-account" className={styles.createButton}>
+            会計を追加
+          </Link>
+        </div>
+        <hr></hr>
         <h1>{company.name1}</h1>
         <h1>会社コード{company.companycode}</h1>
         <div className={styles.date}>作成日{company.created_at}</div>

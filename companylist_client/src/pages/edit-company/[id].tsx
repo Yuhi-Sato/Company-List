@@ -5,6 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { Company, Account } from "../../../src/types";
 import { parseCookies } from "nookies";
+import Link from "next/link";
 
 type Props = {
   company: Company;
@@ -86,6 +87,23 @@ const EditCompany = ({ company }: Props) => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.menue}>
+        <Link href="/" className={styles.createButton}>
+          企業一覧
+        </Link>
+        <Link href="/search-company" className={styles.createButton}>
+          企業を検索
+        </Link>
+        <br></br>
+        <Link href="/create-company" className={styles.createButton}>
+          企業を追加
+        </Link>
+        <br></br>
+        <Link href="/create-account" className={styles.createButton}>
+          会計を追加
+        </Link>
+      </div>
+      <hr></hr>
       <h1 className={styles.title}>会社編集</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <label className={styles.label}>企業コード</label>

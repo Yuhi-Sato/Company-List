@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { Company } from "../types";
 import styles from "@/styles/Home.module.css";
@@ -58,7 +56,6 @@ export default function Home({ companies }: Props) {
   return (
     <>
       <div className={styles.homeContainer}>
-        <h2>企業リスト</h2>
         <div className={styles.menue}>
           <Link href="/search-company" className={styles.createButton}>
             企業を検索
@@ -73,6 +70,9 @@ export default function Home({ companies }: Props) {
             会計一覧
           </Link>
         </div>
+        <hr></hr>
+
+        <h2>企業リスト</h2>
 
         <table className={styles.companyTable}>
           <thead>

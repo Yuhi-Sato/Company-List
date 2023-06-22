@@ -157,6 +157,23 @@ export default function Home() {
   return (
     <>
       <div className={styles.searchcontainer}>
+        <div className={styles.menue}>
+          <Link href="/" className={styles.createButton}>
+            企業一覧
+          </Link>
+          <Link href="/search-company" className={styles.createButton}>
+            企業を検索
+          </Link>
+          <br></br>
+          <Link href="/create-company" className={styles.createButton}>
+            企業を追加
+          </Link>
+          <br></br>
+          <Link href="/create-account" className={styles.createButton}>
+            会計を追加
+          </Link>
+        </div>
+        <hr></hr>
         <label className={styles.label}>検索方法</label>
         <div>
           <input

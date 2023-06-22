@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import Link from "next/link";
 import { Account } from "../types";
 import styles from "@/styles/Home.module.css";
