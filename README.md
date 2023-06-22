@@ -41,6 +41,10 @@ DB上でデータ矛盾が起きないように、以下の2点を設計・実�
 ### 売上・利益・利益率チャート画面
 <img width="1437" alt="スクリーンショット 2023-06-22 11 21 11" src="https://github.com/Yuhi-Sato/Company-List/assets/91863685/1ca81309-9dbb-4b96-b24f-466903807047">
 
+### メモ画面
+<img width="1435" alt="スクリーンショット 2023-06-22 11 30 07" src="https://github.com/Yuhi-Sato/Company-List/assets/91863685/26d67102-5f0c-4e3d-96bd-35af7e40fb7c">
+
+
 # 技術
 * Rails　API(devise, devise_token_auth, cancancan)
 * Next.js
