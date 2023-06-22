@@ -26,6 +26,7 @@
 <img width="1437" alt="スクリーンショット 2023-06-22 11 21 11" src="https://github.com/Yuhi-Sato/Company-List/assets/91863685/1ca81309-9dbb-4b96-b24f-466903807047">
 
 
+
 ### 技術
 * Rails(devise, devise_token_auth, cancancan) API
 * Next.js
