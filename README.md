@@ -15,7 +15,7 @@
 
 # アピールポイント
 ### 認証機能
-Railsのパッケージdevise,devise_token_authを利用して、JWTによるユーザー認証を実装し、事前にDBにユーザー情報が保管されているユーザーのみがログインできるようにしました。
+Railsのパッケージdevise,devise_token_authを利用して、トークン認証を実装し、事前にDBにユーザー情報が保管されているユーザーのみがログインできるようにしました。
 
 ### 権限管理機能
 Railsのパッケージcancancanを利用して、admin権限を持つユーザーのみが企業情報・会計情報の作成、編集、削除を行えるようにしました。
@@ -48,4 +48,6 @@ DB上でデータ矛盾が起きないように、以下の2点を設計・実�
 # 技術
 * Rails　API(devise, devise_token_auth, cancancan)
 * Next.js
+* TypeScript
 * Chart.js
+
