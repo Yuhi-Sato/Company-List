@@ -1,5 +1,6 @@
 class Api::V1::MemosController < ApplicationController
   before_action :authenticate_api_v1_user!
+  load_and_authorize_resource
 
   def index
   end

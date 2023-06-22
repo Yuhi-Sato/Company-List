@@ -8,6 +8,7 @@ class Ability
       can :manage, :all
     else
       can :read, :all
+      can :manage, Memo
     end
   end
 end
