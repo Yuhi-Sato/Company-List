@@ -27,27 +27,33 @@ CSV.foreach("db/ダミー企業情報.csv", headers: true) do |row|
         )
     end
     company = Company.find_by(companycode: row["企業コード"])
-    Account.create(
-        company_id: company.id,
-        companycode: row["企業コード"],
-        year: "2022",
-        sales: row["売上（2022）"].delete(","),
-        revenues: row["利益（2022）"].delete(",")
-    )
-    Account.create(
-        company_id: company.id,
-        companycode: row["企業コード"],
-        year: "2021",
-        sales: row["売上（2021）"].delete(","),
-        revenues: row["利益（2021）"].delete(",")
-    )
-    Account.create(
-        company_id: company.id,
-        companycode: row["企業コード"],
-        year: "2020",
-        sales: row["売上（2020）"].delete(","),
-        revenues: row["利益（2020）"].delete(",")
-    )
+    if !Account.exists?(company_id: company.id, year:"2022")
+        Account.create(
+            company_id: company.id,
+            companycode: row["企業コード"],
+            year: "2022",
+            sales: row["売上（2022）"].delete(","),
+            revenues: row["利益（2022）"].delete(",")
+        )
+    end
+    if !Account.exists?(company_id: company.id, year:"2021")
+        Account.create(
+            company_id: company.id,
+            companycode: row["企業コード"],
+            year: "2021",
+            sales: row["売上（2021）"].delete(","),
+            revenues: row["利益（2021）"].delete(",")
+        )
+    end
+    if !Account.exists?(company_id: company.id, year:"2020")
+        Account.create(
+            company_id: company.id,
+            companycode: row["企業コード"],
+            year: "2020",
+            sales: row["売上（2020）"].delete(","),
+            revenues: row["利益（2020）"].delete(",")
+        )
+    end
 end
 
 CSV.foreach("db/ユーザー.csv", headers: true) do |row|
