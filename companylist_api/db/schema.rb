@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_21_144612) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_22_033633) do
   create_table "accounts", force: :cascade do |t|
     t.integer "company_id"
     t.string "companycode"
@@ -19,6 +19,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_21_144612) do
     t.integer "revenues"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["companycode", "year"], name: "index_accounts_on_companycode_and_year", unique: true
   end
 
   create_table "companies", force: :cascade do |t|
