@@ -78,10 +78,10 @@ export default function Home() {
       param.push(`location2=${location2}`);
     }
     if (location3) {
-      param.push(`location1=${location3}`);
+      param.push(`location3=${location3}`);
     }
     if (location4) {
-      param.push(`location1=${location4}`);
+      param.push(`location4=${location4}`);
     }
     if (year) {
       param.push(`year=${year}`);
